@@ -10,7 +10,7 @@ while(have_posts()) : the_post();?>
 
     <div> <?php the_content(); ?> </div>
 
-    <p>This post was written by <?php the_author(); ?> at <?php the_date();?></p>
+    <p>By <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php the_author(); ?></a> at <?php the_time('F jS, Y g:i a');?></p>
 </article>
 <?php endwhile; endif; ?>
 <?php get_footer();?>
