@@ -30,7 +30,12 @@ while(have_posts()) : the_post();?>
 			?>
     </p>
     
-    <div> <?php the_content(); ?> </div>
+    <div> 
+        <p>
+           <?php echo get_the_excerpt(); ?>
+           <a href="<?php the_permalink(); ?>">Read more &raquo;</a>
+        </p> 
+    </div>
 
 </article>
 <?php endwhile; endif; ?>
