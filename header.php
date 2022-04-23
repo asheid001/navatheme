@@ -6,7 +6,7 @@
     </head>
     <body>
       <nav class="navbar">
-        <div class="brand-title"><?php bloginfo( 'name' )?></div>
+        <div class="brand-title"><a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' )?></a></div>
         <a href="#" class="toggle-button">
           <span class="bar"></span>
           <span class="bar"></span>
