@@ -2,6 +2,10 @@
 
 <?php 
 
+if( is_active_sidebar( 'page-sidebar' )) {
+    dynamic_sidebar( 'page-sidebar' );
+}
+
 if(have_posts()) :
 while(have_posts()) : the_post();?>
 
